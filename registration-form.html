@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins&display=swap" rel="stylesheet">
+    <title>Registraion Page</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center; 
+            height: 700px;
+            background-color: #f1f1f1;
+            background-image: url('images/pexels-eberhard-grossgasteiger-691668.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;    
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Poppins', sans-serif ;
+            box-sizing: border-box;
+        }
+         .container{
+            padding: 28px; 
+            margin-top: 40px;
+            width: fit-content;
+            height: fit-content;
+            max-width: 650px;
+            background: rgba(0, 0, 0, 0.333);
+            border-radius: 12px;
+         }
+
+         form{
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+         }
+         
+         h2{
+            color: rgb(255, 117, 33);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 36px;
+            font-family: 'Prompt', sans-serif;
+            text-align: center;
+            border-bottom: solid 2px rgb(198, 92, 26);
+         }
+
+         .full{
+            display: flex;
+            flex-direction: row;
+            float: left;
+            margin:20px 20px ;
+            width: 100%;
+         }
+
+         .full:nth-child(2){
+            display: flex;
+            flex-direction: row;
+         }
+
+         .half-50{
+            width: 48%;
+            float: left;
+         }
+
+         .half-50:last-child{
+            width: 40%;
+         }
+
+         label{
+            
+            color: rgb(198, 92, 26);
+            text-align: left;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 700;
+         }
+
+         .full input[type="text"], .full select , .full textarea {
+            border-color: rgb(62, 68, 70);
+            color: rgb(175, 168, 157);
+            width: 200px;
+            padding: 7px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+         } 
+
+         .full input[type="email"]{
+            height: 32px;
+            border-color: rgb(62, 68, 70);
+            color: rgb(175, 168, 157);
+            margin-left: -75px;
+            margin-top:30px;
+            width: 500px;
+            padding: 7px;
+            margin: 30x 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+         }
+
+         label:nth-child(4){
+            height: 20px;
+         }
+         .full textarea{
+            margin-top:30px ;
+            margin-left: -100px;
+            width: 500px;
+         }
+
+         .submit input[type="submit"] {
+            background-color: rgb(198, 92, 26);
+            color: white;
+            width: 500px;
+            height: 50px;
+            max-width: 650px;
+            padding: 4px 20px;
+            margin-left: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 32px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Prompt', sans-serif;;
+         }
+
+    </style>
+</head>
+<body>
+        </div>
+        <div class="container">
+            <h2>Registraion</h2>
+            <form action="#">
+                <div class="full">
+                    <div class="half-50">
+                        <label for="fname">Full Name<span>*</span> </label>
+                        <input type="text" id="fname" placeholder="Your name">
+                    </div>
+                    <div class="half-50">
+                        <label for="location"> Country <span>*</span></label>
+                        <select name="country" id="location">
+                            <option value>select country</option>
+                            <option value="India">India</option>
+                            <option value="Malasiya">Malasiya</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="United States">United States</option>
+                            <option value="France">France</option>
+                            <option value="Australia">Australia</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Denmark">Denmark</option>   
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="China">China</option>
+                            <option value="Europe"> Europe</option>
+                        </select>   
+                    </div>
+                </div>
+                <div class="full">
+                    <label for="email">Email ID <span>*</span></label>
+                    <input type="email" id="email" placeholder="Email ">
+                </div>
+                <div class="full">
+                    <label for="description">Description <span>*</span></label>
+                    <textarea name="description" id="description" placeholder="Enter your tour description" cols="100" rows="10"></textarea>
+                </div>
+                <div class="full">
+                    <div class="half-50">
+                        <label for="travel-date">Travel Dates <span>*</span></label>
+                        <input type="text" id="travel-date" placeholder="Travel dates">
+                    </div>
+                    <div class="half-50">
+                        <label for="duration">Duration of the stay<span>*</span> </label>
+                        <input type="text" id="duration" placeholder="Duration of the stay">
+                    </div>
+                </div>
+                <div class="full">
+                    <div class="half-50">
+                        <label for="person">No of person <span>*</span></label>
+                        <input type="text" id="person" placeholder="No of person">
+                    </div>
+                    <div class="half-50">
+                        <label for="contact">Contact No<span>*</span></label>
+                        <input type="text" id="contact" placeholder="Contact No">
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
