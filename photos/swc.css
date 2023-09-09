@@ -1,0 +1,91 @@
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#26262c;
+  display:none;
+}  
+#san {
+    padding: 20px;
+}
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:750px; 
+  height:auto;
+  padding: 10px 10px 10px 10px;
+  background-color:#ffffff;
+  position: fixed;
+ text-align:left;
+}
+
+.agree:hover{
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+	background-color:#D1D1D1;
+	color: green;
+}
+.popupoption2:hover{
+	color: red;
+}
+.popup-div h2{font-family: 'SFProDisplay-Light';
+color: #38404f;
+font-size: 16px;
+line-height: 22px;
+padding-bottom: 10px;}
+.popup-div h3{
+font-family: 'SFProDisplay-Light';
+color: #38404f;
+font-size: 19px;
+line-height: 22px;
+padding-bottom: 10px;
+position: relative;
+text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+.popup-div h2 b{font-family: SFProDisplay-Bold;}
+.popup-div h3:after{
+content: '';height: 2px; width: 38px;background:#FF6612;
+bottom: 0; 
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;    
+}
+
+
+
+.popup-div p{font: 14px/22px 'SFProDisplay-Regular';
+    color: #3e3e3e;    
+    padding-bottom: 10px;}
+.popup-div p a{color:#0e59cb;}
+
+@media only screen and (max-width:768px){
+#boxes #dialog {width: 94%;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 3%;
+	/*top: 50px !important;	*/
+}
+.popup-div {
+    overflow-y: scroll;
+    /*height: 500px;*/
+}
+.popup-div h3{font-size: 18px;word-spacing: 0;}
+
+}
+
